@@ -20,7 +20,7 @@ Set_scMRMA_P <- 0.05
 
 
 ####
-## Keloid_Jojie
+## Keloid
 seuratObject_Sample <- readRDS(file = "C:/Charlene/Dataset_KGD_Lab/#_Seurat_Object/Keloid_Jojie/TNtype.combined-37.rds")
 seuratObject_Sample$Type <- seuratObject_Sample$orig.ident1
 seuratObject_Sample$Cell_Type_KGD <- Idents(seuratObject_Sample)
@@ -29,15 +29,6 @@ seuratObject_Sample$Cell_Type_KGD <- Idents(seuratObject_Sample)
 seuratObject_Sub_Fib <- seuratObject_Sample[, grepl("fibroblasts", seuratObject_Sample$Cell_Type_KGD)]
 
 
-# ## Keloid_Charlene
-# seuratObject_Sample <- readRDS(file = "C:/Charlene/Code_GitHub_BioInport2025/KGD_Lab_Code_scRNA-seq_Ch/Export_2025051707YXL_Keloid_For_Reproduction/2025051707YXL_CellTypeAnnot2.rds")
-# seuratObject_Sample$Type <- seuratObject_Sample$orig.ident1
-# seuratObject_Sample$Cell_Type_KGD <- seuratObject_Sample$BroadCellTypeAnnot_SeuratClusters
-# seuratObject_Sample$Cell_Type <- NULL
-# seuratObject_Sample$BroadCellTypeAnnot_SeuratClusters <- NULL
-# 
-# ## Extract Fibroblasts
-# seuratObject_Sub_Fib <- seuratObject_Sample[, grepl("Fibroblasts", seuratObject_Sample$Cell_Type_KGD)]
 
 
 ################################################################################
