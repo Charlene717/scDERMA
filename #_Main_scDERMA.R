@@ -17,7 +17,7 @@ if(!require('scMRMA')) {devtools::install_github("JiaLiVUMC/scMRMA"); library(sc
 
 ####
 Set_scMRMA_P <- 0.05
-
+Set_SubClust_k <- 20
 
 ####
 ## Keloid
